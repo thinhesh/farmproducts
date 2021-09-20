@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cussignup.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap">
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <script src="JAVASCRIPT/cussign.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navigation">
+            <img class="img" src="img/logo.svg" alt="logo">
+            <button class="home" onclick="document.location='index.html'">
+                <span class="material-icons-outlined">
+                    home
+                </span>
+            </button>
+        </div>
+        <div class="sub-div">
+            <div class="left-div">
+                <div class="heading">
+                    <h1 class="h1">Farm</h1>
+                    <h1 class="h2">products</h1>
+                </div>
+                <img src="img/fruitsalid.png" alt="fruitsalid"class="img2">
+            </div>
+            <div class="right-div">
+                <div class="login-div">
+                    <p class="para">Login as customer,</p>
+                    <div class="error-div" id="error-div">
+                        <p class="para3" id="para">error message</p>
+                    </div>
+                    <div class="form">
+                        <form action="php/customersignup.php" method="POST" onsubmit="return validation()">
+                            <input type="text" placeholder="Username" id="text" name="user"></br>
+                            <input type="password" placeholder="Password" id="pass" name="pass"><br>
+                            <input type="password" placeholder="Conform password" id="cpass"><br>
+                            <button type="submit">Sign in</button>
+                            <div class="button">
+                                
+                                <a href="cuslogin.html">Already have an account?<b>login in</b></a>
+                            </div>
+                        </form>
+                        
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>

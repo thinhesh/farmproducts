@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="farsignup.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap">
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <script src="farsign.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navigation">
+            <img class="img" src="img/logo.svg" alt="logo">
+            <button class="home" onclick="document.location='index.html'">
+                <span class="material-icons-outlined">
+                    home
+                </span>
+            </button>
+        </div>
+        <div class="sub-div">
+            <div class="left-div">
+                <div class="heading">
+                    <h1 class="h1">Farm</h1>
+                    <h1 class="h2">products</h1>
+                </div>
+                <img src="img/fruitsalid.png" alt="fruitsalid"class="img2">
+            </div>
+            <div class="right-div">
+                <div class="login-div">
+                    <p class="para">Create account as farmer,</p>
+                    <div class="error-div" id="error-div">
+                        <p class="para3" id="para">error message</p>
+                    </div>
+                    <div class="form">
+                        <form   action="signup.php" method="POST">
+                            <div class="sub-form">
+                                <div class="left-form" >
+                                        <input type="text" placeholder="Username" class="login" name="user" id="text">
+                                        <input type="password" placeholder="Password" class="login" name="pass" id="pass">
+                                        <input type="password" placeholder="Conform password" class="login" id="cpass">
+                                        <input type="text" placeholder="Location" class="login" name="loc" id="location">
+                                        
+                                </div>
+                                <div class="right-form">
+                                    <div class="phone">
+                                        <input type="telephone" placeholder="Phone"class="login" name="phone" id="phone">
+                                    </div>
+                                    <div class="address">
+                                        <input type="text" placeholder="Address" class="login" name="addres" id="address">
+                                    </div>
+                                    
+                                   
+                                </div>
+                            </div>
+                            <button id="submit"type="submit">Create account</button><br>
+                            <a href="farlogin.html">Already have an account?<b style="color: #01875f;">login here</b></a>
+                        </form>
+                        
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
